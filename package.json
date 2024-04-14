@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "canvas": "^2.11.2",
@@ -16,5 +18,8 @@
     "react-dom": "18.2.0",
     "react-quick-pinch-zoom": "^5.1.0",
     "react-zoom-pan-pinch": "^3.4.4"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
   }
 }
